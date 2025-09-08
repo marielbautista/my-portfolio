@@ -1,0 +1,42 @@
+body {
+  background-color: #e8e8e8;
+  color: #303a46;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  background-color: #26201ac2;
+  color: #e8e8e8;
+  border-radius: 15px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.card-item, .card-item-others, .web-design-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-item:hover, .card-item-others:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.web-design-img:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.card-item::after, .card-item-others::after, .web-design-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  cursor: default;
+
+}

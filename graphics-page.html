@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+    <head>
+     <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Graphic Designs</title>
+        <link rel="icon" href="img/Logo 2.2.png">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Custom CSS -->
+		<link rel="stylesheet" href="css/icofont.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Google Fonts -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		
+    </head>
+    <body>
+        <!-- Begin unified background section -->
+        <div class="hero-bg" 
+            style="background-image: url('img/header-bg.jpeg'); 
+            background-size: cover; 
+            background-position: center; 
+            min-height: 26vh; 
+            margin: 10px; 
+            border-radius: 15px; 
+            overflow: hidden;">
+
+        <nav class="navbar navbar-expand-md site-navbar-hero scroll-hidden">
+            <div class="container">
+
+            <!-- Collapsed hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#heroNav" aria-controls="heroNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav items -->
+            <div class="collapse navbar-collapse justify-content-center" id="heroNav">
+                <ul class="navbar-nav text-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about-section">About Me</a></li>
+
+            <!-- Works Dropdown -->
+            <li class="nav-item dropdown">
+            <!-- the link really navigates -->
+            <a class="nav-link active dropdown-toggle" href="#works-section" id="worksDropdownFixed"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Works
+            </a>
+
+                <ul class="dropdown-menu text-center" aria-labelledby="worksDropdownFixed">
+                    <li><a class="dropdown-item" href="illustrations-page.html">Illustrations</a></li>
+                    <li><a class="dropdown-item active" href="graphics-page.html">Graphic Design</a></li>
+                    <li><a class="dropdown-item" href="videos-page.html">Videos</a></li>
+                    <li><a class="dropdown-item" href="web-design-page.html">Web Design</a></li>
+                </ul>
+            </li>
+
+                <li class="nav-item"><a class="nav-link" href="index.html#school-projects-section">School Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact-bg">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+
+        <!-- Hero Section -->
+        <header class="hero-section hidden text-white d-flex align-items-center justify-content-center">
+            <div class="container header-section" id="about-section">
+            <div class="row justify-content-center align-items-center">
+
+                <!-- Text Column -->
+                <div class="col-md-6 col-12">
+                <div class="header-content hidden">
+                    <h1 class="display-1 fw-semibold text-uppercase" style="font-size:64px;">
+                    Graphic Designs
+                    </h1>
+                    <p style="font-size:20px;">
+                    Designs created using Canva, Adobe Photoshop, and Adobe Illustrator for social media, events, and photo manipulations.
+                    </p>
+                    <span>
+                        <i>All logos and trademarks shown remain the property of their respective owners; used here only to showcase my work.</i>
+                    </span>
+                </div>
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-md-6 col-12">
+                <div class="header-photo hidden">
+                    <img src="img/graphics.png" class="img-fluid" alt="Illustrations preview">
+                </div>
+                </div>
+
+            </div>
+            </div>
+        </header>
+        </div>
+        <!-- End unified background section -->
+
+        <!-- Fixed Navbar-->
+        <nav class="navbar navbar-expand-md site-navbar-fixed nav-fade-out">
+        <div class="container">
+            <!-- Mobile toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#fixedNav" aria-controls="fixedNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible nav items -->
+            <div class="collapse navbar-collapse justify-content-center" id="fixedNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="index.html#about-section">About Me</a>
+                </li>
+
+            <!-- Works Dropdown -->
+            <li class="nav-item dropdown">
+            <!-- the link really navigates -->
+            <a class="nav-link active dropdown-toggle" href="#works-section" id="worksDropdownFixed"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Works
+            </a>
+
+                <ul class="dropdown-menu text-center" aria-labelledby="worksDropdownFixed">
+                    <li><a class="dropdown-item" href="illustrations-page.html">Illustrations</a></li>
+                    <li><a class="dropdown-item active" href="graphics-page.html">Graphic Design</a></li>
+                    <li><a class="dropdown-item" href="videos-page.html">Videos</a></li>
+                    <li><a class="dropdown-item" href="web-design-page.html">Web Design</a></li>
+                </ul>
+            </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="index.html#school-projects-section">School Projects</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="index.html#contact-bg">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+        <!-- School Organization -->
+        <div class="categories" id="school-organization-section">
+            <div class="container mt-5">
+                <h1 class="display-1 scroll-hidden text-center fw-semibold" style="font-size:74px; text-transform:uppercase;">
+                School Organization
+                </h1>
+                <p class="text-center mb-5 scroll-hidden" style="font-size:20px;">
+                Social media graphics designed for the Codability Tech Student Organization (CTSO) at National University-Fairview.
+                </p>
+
+                <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item h-100 shadow-sm border-0 scroll-hidden">
+                    <img src="img/Social Media Graphics/School Organization/CODA_GDSC.png" class="card-img-top" alt="Cat drawing">
+                    
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item h-100 shadow-sm border-0 scroll-hidden">
+                    <img src="img/Social Media Graphics/School Organization/CODA_LaborDay.png" class="card-img-top" alt="Dog drawing">
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item h-100 shadow-sm border-0 scroll-hidden">
+                    <img src="img/Social Media Graphics/School Organization/Elections_1.png" class="card-img-top" alt="Bird drawing">
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item h-100 shadow-sm border-0 scroll-hidden">
+                    <img src="img/Social Media Graphics/School Organization/Elections_2.png" class="card-img-top" alt="Fish drawing">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Orion Medical -->
+        <div class="categories" id="orion-medical-section">
+            <div class="container mt-5">
+                <h1 class="display-1 scroll-hidden text-center fw-semibold" style="font-size:74px; text-transform:uppercase;">
+                Orion Medical
+                </h1>
+                <p class="text-center mb-5 scroll-hidden" style="font-size:20px;">
+                Social media graphics designed for Orion Medical Equipment and Supplies Corp.
+                </p>
+
+                <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item h-100 shadow-sm border-0 scroll-hidden">
+                    <img src="img/Social Media Graphics/Orion/11.png" class="card-img-top" alt="Cat drawing">
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item h-100 shadow-sm border-0 scroll-hidden">
+                    <img src="img/Social Media Graphics/Orion/ORION_1.png" class="card-img-top" alt="Dog drawing">
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item h-100 shadow-sm border-0 scroll-hidden">
+                    <img src="img/Social Media Graphics/Orion/ORION_2.png" class="card-img-top" alt="Bird drawing">
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item h-100 shadow-sm border-0 scroll-hidden">
+                    <img src="img/Social Media Graphics/Orion/PD-2.png" class="card-img-top" alt="Fish drawing">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photo Manipulation -->
+        <div class="categories" id="photo-manipulation-section">
+            <div class="container mt-5">
+                <h1 class="display-1 scroll-hidden text-center fw-semibold" style="font-size:74px; text-transform:uppercase;">
+                Photo Manipulation
+                </h1>
+                <p class="text-center mb-5 scroll-hidden" style="font-size:20px;">
+                Photo manipulations created using Adobe Photoshop.
+                </p>
+
+                <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item-others shadow-sm border-0">
+                    <img src="img/Renders/1st/IMG_0902.JPG" class="card-img-top" alt="Cat drawing">
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item-others shadow-sm border-0">
+                    <img src="img/Renders/1st/IMG_0905.JPG" class="card-img-top" alt="Dog drawing">
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item-others shadow-sm border-0">
+                    <img src="img/Renders/2nd/IMG_0906.JPG" class="card-img-top" alt="Bird drawing">
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item-others shadow-sm border-0">
+                    <img src="img/Renders/2nd/IMG_0901.JPG" class="card-img-top" alt="Fish drawing">
+                    </div>
+                </div>
+                <span class="d-block text-center mt-3">
+                    <i>Hover mouse to see full image.</i>
+                </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- School Organization Events -->
+        <div class="categories" id="school-organization-events-section">
+            <div class="container mt-5">
+                <h1 class="display-1 scroll-hidden text-center fw-semibold" style="font-size:74px; text-transform:uppercase;">
+                School Organization Events
+                </h1>
+                <p class="text-center mb-5 scroll-hidden" style="font-size:20px;">
+                Posters and flyers designed for various events organized by the Codability Tech Student Organization (CTSO) at National University-Fairview.
+                </p>
+
+                <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item h-100 shadow-sm border-0 scroll-hidden">
+                    <img src="img/Social Media Graphics/School Organization Events/NUFV_IoTSymposiumPOSTER.png" class="card-img-top" alt="NUFV_IoTSymposiumPOSTER">
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item h-100 shadow-sm border-0 scroll-hidden">
+                    <img src="img/Social Media Graphics/School Organization Events/NUQueue_flyer.png" class="card-img-top" alt="NUQueue_flyer">
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-6 col-md-3">
+                    <div class="card-item h-100 shadow-sm border-0 scroll-hidden">
+                    <img src="img/Social Media Graphics/School Organization Events/NUFV-Membership_poster.png" class="card-img-top" alt="NUFV-Membership_poster">
+                    </div>
+                </div>
+                </div>
+
+                <div class="row g-4 mt-1 justify-content-center">
+                  <!-- Card 4-->
+                <div class="col-6 col-md-3">
+                    <div class="card-item-others shadow-sm border-0">
+                    <img src="img/Social Media Graphics/School Organization Events/RAIA_flyer.png" class="card-img-top" alt="">
+                    </div>
+                </div>
+
+                <!-- Card 5-->
+                <div class="col-12 col-md-6">
+                    <div class="card-item-others shadow-sm border-0">
+                    <img src="img/Social Media Graphics/School Organization Events/Two-tile_Seminar.png" class="card-img-top" alt="">
+                    </div>
+                </div>
+                </div>
+                <span class="d-block text-center mt-3">
+                    <i>Hover mouse to see full image.</i>
+                </span>
+            </div>
+        </div>
+
+        <!-- Contact  -->
+        <div class="contact-bg scroll-hidden" id="contact-bg" style="background-image: url('img/header-bg.jpeg'); background-size: cover; background-position: center; max-height: 66vh; margin: 10px; border-radius: 15px; overflow: hidden;">
+            <div class="contact-section scroll-hidden text-center text-white d-flex align-items-center justify-content-center" style="height: 80vh;">
+                <div class="container">
+                    <h1 style="font-weight: 600; font-size: 112px;">Connect With Me</h1>
+                    <h4 style="font-weight: 100; margin-bottom: 15px;">marielalyssab@gmail.com</h4>
+                    <div class="col-12">
+                        <a href="https://www.instagram.com/marielxalyssa/" target="_blank" class="text-white fs-3 me-3">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/yenggoo/" target="_blank" class="text-white fs-3 me-3">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mariel-alyssa-bautista-923220255" target="_blank" class="text-white fs-3 me-3">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@MarielAlyssa" target="_blank" class="text-white fs-3 me-3">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center py-4">
+            <p class="mb-0">&copy; 2025 Mariel Alyssa Bautista. All rights reserved.</p>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

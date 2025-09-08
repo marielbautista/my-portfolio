@@ -1,0 +1,368 @@
+.hero-bg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical centering */
+  align-items: center;       
+}
+
+.hero-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(38, 32, 26, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.hero-bg > * {
+    position: relative;
+    z-index: 2;
+}
+.hero-heading {
+  font-size: clamp(2.5rem, 10vw, 9rem);
+}
+
+.hero-section .display-1 span {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.hero-section .display-1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+.hero-section .display-1 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.hero-section .display-1 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.hero-section .display-1 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.hero-section .display-1 span:nth-child(5) {
+    animation-delay: 0s;
+}
+.hero-section .display-1 span:nth-child(6) {
+    animation-delay: 0.2s;
+}
+.hero-section .display-1 span:nth-child(7) {
+    animation-delay: 0.4s;
+}
+.hero-section .display-1 span:nth-child(8) {
+    animation-delay: 0.6s;
+}
+.hero-section .display-1 span:nth-child(9) {
+    animation-delay: 0s;
+}
+.hero-section .display-1 span:nth-child(10) {
+    animation-delay: 0.2s;
+}
+.hero-section .display-1 span:nth-child(11) {
+    animation-delay: 0.4s;
+}
+.hero-section .display-1 span:nth-child(12) {
+    animation-delay: 0.6s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+/* One .navbar base */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;    
+  align-items: center;       
+  flex-direction: row;        
+  width: auto;            
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  padding: 15px;
+  display: none;
+  background: rgba(38, 32, 26, 0.7); /* #26201A with 70% opacity */
+  color: #e8e8e8;
+}
+
+.navbar-nav .dropdown-item {
+  color: #e8e8e8a0;
+}
+
+.navbar-nav .dropdown-item.active {
+  color: #e8e8e8;
+  background: none;
+  font-weight: 600;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background: rgba(38, 32, 26, 0.452);
+  color: #e8e8e8;
+  font-weight: 600;
+}
+
+
+.nav-link {
+  color: #e8e8e8b3 !important;
+  letter-spacing: 1px;
+  margin-right: 80px;
+  position: relative;
+  padding: 0.5rem 0 !important;
+  transition: all 0.2s ease-in-out 0s;
+
+}
+
+.nav-link.active, .nav-link:hover {
+    opacity: 1;
+    font-weight: bolder;
+    color: #e8e8e8 !important; /* Active color */
+    
+    &::after {
+      visibility: visible; /* Show underline on active or hover */
+      opacity: 1;
+    }
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-item.dropdown .dropdown-toggle {
+  color: inherit;
+  border: none;
+  padding: 0;
+  background: transparent;
+  line-height: 1;
+}
+
+
+
+.site-navbar-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0.5rem 1rem;
+}
+
+
+.site-navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(38, 32, 26, 0.7); /* #26201A with 70% opacity */
+  z-index: 999;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* Navbar fade helpers */
+.nav-fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-fade-in {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s ease;
+}
+
+.about-section {
+    padding: 50px;
+    color: #26201A;
+
+    .about-content{
+      text-align: left;
+    }
+
+    .img-fluid {
+      object-fit: cover;
+      
+    }
+
+    .about-photo {
+      height: 400px !important;
+      overflow: hidden;
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+
+.header-section {
+    padding: 50px;
+    color: #e8e8e8;
+
+    .header-content{
+      text-align: left;
+    }
+
+    .img-fluid {
+      object-fit: cover;
+      
+    }
+
+    .header-photo img {
+      object-fit: cover;
+  }
+}
+
+.works-section {
+    padding: 50px;
+    background: #26201A;
+    min-height: 70vh;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+
+  .work-card {
+      padding: 15px;
+      border-radius: 18px;
+      background: #fff;
+  }
+
+  .work-card-img {
+      border-radius: 18px 18px 0 0;
+      height: 360px;
+      object-fit: cover;
+  }
+
+  .school-projects-section {
+    padding: 50px;
+    color: #26201A;
+    text-align: left;
+  }
+}
+
+.school-projects-section {
+  padding: 10px 50px;
+  overflow-y: auto;
+
+  #schoolProject1, #schoolProject2, #schoolProject3 {
+      background: #26201A;
+      color: #e8e8e8;
+      border-radius: 15px;
+      margin-bottom: 5px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+  }
+
+  h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+.plus-toggle-btn .plus-rotate {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.project span {
+  font-size: 1rem;
+}
+.project:hover span {
+  color: #7a7a7a;
+  cursor: pointer;
+}
+}
+
+#school-organization-events-section, #photo-manipulation-section {
+
+  .card-item-others {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card-item-others img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.15);
+    transition: transform 0.6s ease;
+  }
+
+  .card-item-others:hover img {
+    transform: scale(1);
+    object-fit: contain;
+  }
+
+}
+
+.categories {
+    padding: 10px 50px;
+}
+
+.contact-bg {
+  position: relative;
+
+  .contact-section a {
+  color: #e8e8e8;
+  text-decoration: none !important;
+}
+
+}
+
+.contact-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(38, 32, 26, 0.7); /* #26201A with 70% opacity */
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.contact-bg > * {
+  position: relative;
+  z-index: 2;
+}
+
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-show {
+  opacity: 1;
+  transform: translateY(0);
+}

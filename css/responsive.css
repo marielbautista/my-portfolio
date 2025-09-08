@@ -1,0 +1,21 @@
+@media (max-width: 767.98px) {
+  .navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0; /* align flush with toggle */
+  } 
+  .navbar-toggler {
+    background-color: #e8e8e8a7 !important;
+    border-radius: 4px;
+  }
+  .hero-section {
+    padding-top: 80px;
+  }
+
+.navbar-nav .nav-link {
+    margin-right: 45px;
+}
+
+.contact-bg h1{
+  font-size: 92px !important;
+}
+}

@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Welcome!</title>
+        <link rel="icon" href="img/Logo 2.2.png">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Google Fonts -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		
+    </head>
+
+    <body>
+        <!-- Begin unified background section -->
+        <div class="hero-bg" id="home-section"
+            style="background-image: url('img/header-bg.jpeg');
+                    background-size: cover;
+                    background-position: center;
+                    min-height: 96vh;
+                    margin: 10px;
+                    border-radius: 15px;
+                    overflow: hidden;">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md site-navbar-hero scroll-hidden">
+            <div class="container">
+
+            <!-- Collapsed hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#heroNav" aria-controls="heroNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav items -->
+            <div class="collapse navbar-collapse justify-content-center" id="heroNav">
+                <ul class="navbar-nav text-center">
+                <li class="nav-item"><a class="nav-link active" href="#home-section">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-section">About Me</a></li>
+
+            <!-- Works Dropdown -->
+            <li class="nav-item dropdown">
+            <!-- the link really navigates -->
+            <a class="nav-link dropdown-toggle" href="#works-section" id="worksDropdownFixed"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Works
+            </a>
+
+            <ul class="dropdown-menu text-center" aria-labelledby="worksDropdownFixed">
+                <li><a class="dropdown-item" href="illustrations-page.html">Illustrations</a></li>
+                <li><a class="dropdown-item" href="graphics-page.html">Graphic Design</a></li>
+                <li><a class="dropdown-item" href="videos-page.html">Videos</a></li>
+                <li><a class="dropdown-item" href="web-design-page.html">Web Design</a></li>
+            </ul>
+            </li>
+
+                <li class="nav-item"><a class="nav-link" href="#school-projects-section">School Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-bg">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero-section text-center text-white d-flex align-items-center justify-content-center"
+                style="height: 80vh;">
+            <div class="container px-3">
+            <h1 class="fw-bold display-1 lh-1 hero-heading">
+                Hello, I’m <br>
+                <span>M</span><span>a</span><span>r</span><span>i</span><span>e</span><span>l</span>
+                <span>A</span><span>l</span><span>y</span><span>s</span><span>s</span><span>a</span>
+            </h1>
+            <p class="lead mt-3">Freelance Illustrator | Graphic & Web Designer | Digital Creative</p>
+
+            <a href="files/Bautista,MarielAlyssa_Resume.pdf" class="btn btn-light btn-lg mt-3" download>
+                <i class="bi bi-download me-2"></i>Download Résumé
+            </a>
+            <div class="small"><em>Updated August 2025</em></div>
+            </div>
+        </header>
+        </div>
+        <!-- End unified background section -->
+
+        <!-- Fixed Navbar -->
+        <nav class="navbar navbar-expand-md site-navbar-fixed nav-fade-out">
+        <div class="container">
+            <!-- Mobile toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#fixedNav" aria-controls="fixedNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible nav items -->
+            <div class="collapse navbar-collapse justify-content-center" id="fixedNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                <a class="nav-link active" href="#home-section">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#about-section">About Me</a>
+                </li>
+            <!-- Works Dropdown -->
+            <li class="nav-item dropdown position-relative">
+            <!-- the link really navigates -->
+            <a class="nav-link dropdown-toggle" href="#works-section" id="worksDropdownFixed"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Works
+            </a>
+
+            <ul class="dropdown-menu text-center" aria-labelledby="worksDropdownFixed">
+                <li><a class="dropdown-item" href="illustrations-page.html">Illustrations</a></li>
+                <li><a class="dropdown-item" href="graphics-page.html">Graphic Design</a></li>
+                <li><a class="dropdown-item" href="videos-page.html">Videos</a></li>
+                <li><a class="dropdown-item" href="web-design-page.html">Web Design</a></li>
+            </ul>
+            </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#school-projects-section">School Projects</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#contact-bg">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+        <!-- About Section -->
+        <div class="about-section" id="about-section">
+        <div class="container mt-5">
+            <div class="row justify-content-center align-items-center">
+            <!-- Text -->
+            <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                <div class="about-content scroll-hidden">
+                <h6>About Me</h6>
+                <h1 class="display-1 fw-semibold about-heading">
+                    Mariel Alyssa Bautista
+                </h1>
+                <p class="mt-4">
+                    I am an IT graduate from NU Fairview and a freelance Illustrator, Graphic Designer, and Digital Creative. Over the past four years, I’ve specialized in illustrating children’s books and crafting visuals that bring stories and ideas to life. My experience includes creating professional book layouts in InDesign, editing covers in Photoshop, and designing digital and web projects that combine creativity with user-focused functionality.
+                </p>
+                </div>
+            </div>
+            <!-- Photo -->
+            <div class="col-md-6 col-12">
+                <div class="about-photo scroll-hidden rounded-4">
+                <img src="img/me.jpg" class="img-fluid" alt="Portrait of Mariel Alyssa Bautista">
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+           
+        <!-- Tools Swiper Carousel -->
+        <div class="swiper-container scroll-hidden" style="width: 100%;padding: 15px 30px;">
+            <div class="row align-items-center my-4">
+                <div class="col-auto">
+                    <span style="font-size: 1.2rem; font-weight: 600; color: #26201A;">Technical Skills:</span>
+                </div>
+                <div class="col">
+                    <div class="swiper mySwiper" style="width:100%;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide d-flex justify-content-center align-items-center"><img src="img/adobe-illustrator.png" alt="Adobe Illustrator" style="height:60px;"></div>
+                                <div class="swiper-slide d-flex justify-content-center align-items-center"><img src="img/adobe-photoshop.png" alt="Adobe Photoshop" style="height:60px;"></div>
+                                <div class="swiper-slide d-flex justify-content-center align-items-center"><img src="img/adobe-indesign.png" alt="Adobe InDesign" style="height:60px;"></div>
+                                <div class="swiper-slide d-flex justify-content-center align-items-center"><img src="img/capcut.png" alt="CapCut" style="height:60px;"></div>
+                                <div class="swiper-slide d-flex justify-content-center align-items-center"><img src="img/html.png" alt="HTML5" style="height:60px;"></div>
+                                <div class="swiper-slide d-flex justify-content-center align-items-center"><img src="img/css.png" alt="CSS3" style="height:60px;"></div>
+                                <div class="swiper-slide d-flex justify-content-center align-items-center"><img src="img/canva.png" alt="Canva" style="height:60px;"></div>
+                                <div class="swiper-slide d-flex justify-content-center align-items-center"><img src="img/java.png" alt="Java" style="height:60px;"></div>
+                                <div class="swiper-slide d-flex justify-content-center align-items-center"><img src="img/android-studio.png" alt="Android Studio" style="height:60px;"></div>
+                                <div class="swiper-slide d-flex justify-content-center align-items-center"><img src="img/visual-studio.png" alt="Visual Studio" style="height:60px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        <!-- Works Section -->
+        <div class="works-section scroll-hidden" id="works-section" style="background: #26201A; min-height: 70vh; margin: 10px; border-radius: 15px; overflow: hidden;">
+            <div class="text-center scroll-hidden">
+                <h2 class="display-2" style="font-weight: 600; color: #e8e8e8;">My Works</h2>
+                <p class="lead" style="color: #e8e8e8;">A showcase of my favorite illustrations, designs, and creative projects.</p>
+            </div>
+            <div class="row justify-content-center align-items-center mt-5 gx-4" style="width:100%; margin:0;">
+                <div class="col-lg-6 d-flex flex-column gap-4 px-3" style="padding-left:0; padding-right:0;">
+                    <!-- Card 1 -->
+                    <div class="card work-card h-100 shadow-sm w-100 scroll-hidden">
+                        <img src="img/Headers/illustration.png" class="card-img-top work-card-img" alt="Work 1">
+                        <div class="card-body d-flex flex-row align-items-center justify-content-between text-start">
+                            <div>
+                                <h5 class="card-title mb-1">Illustrations</h5>
+                                <p class="card-text mb-2">Children's Book Illustrations</p>
+                            </div>
+                            <a href="illustrations-page.html" class="btn ms-3">Explore More</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->               
+                    <div class="card work-card h-100 shadow-sm w-100 scroll-hidden">
+                        <img src="img/Headers/website.png" class="card-img-top work-card-img" alt="Work 3">
+                        <div class="card-body d-flex flex-row align-items-center justify-content-between text-start">
+                            <div>
+                                <h5 class="card-title mb-1">Front-End or Web Design</h5>
+                                <p class="card-text mb-2">Responsive Web Design Projects</p>
+                            </div>
+                            <a href="web_design-page.html" class="btn ms-3">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex flex-column gap-4 px-3" style="padding-left:0; padding-right:0;">
+                    <!-- Card 3 -->
+                    <div class="card work-card h-100 shadow-sm w-100 scroll-hidden">
+                        <img src="img/Headers/graphics.png" class="card-img-top work-card-img" alt="Work 2">
+                        <div class="card-body d-flex flex-row align-items-center justify-content-between text-start">
+                            <div>
+                                <h5 class="card-title mb-1">Graphic Design</h5>
+                                <p class="card-text mb-2">Marketing Materials</p>
+                            </div>
+                            <a href="graphics-page.html" class="btn ms-3">Explore More</a>
+                        </div>
+                    </div>  
+                    <!-- Card 4 -->
+                    <div class="card work-card h-100 shadow-sm w-100 scroll-hidden">
+                        <img src="img/Headers/video.png" class="card-img-top work-card-img" alt="Work 4">
+                        <div class="card-body d-flex flex-row align-items-center justify-content-between text-start">
+                            <div>
+                                <h5 class="card-title mb-1">Video Editing</h5>
+                                <p class="card-text mb-2">Marketing Videos</p>
+                            </div>
+                            <a href="videos-page.html" class="btn ms-3">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- School Projects -->
+        <section class="school-projects-section py-5" id="school-projects-section">
+        <div class="container">
+            <h1 class="display-4 fw-semibold mb-5 scroll-hidden">
+            School Projects
+            </h1>
+
+            <div class="row align-items-start">
+            <!-- Left Column -->
+            <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+                <div class="school-projects-content scroll-hidden text-center text-md-start">
+                <p class="mb-0">
+                    A collection of my school projects showcasing my skills in various
+                    areas of design and development.
+                </p>
+                </div>
+            </div>
+
+            <!-- Right Column (Accordion) -->
+            <div class="col-12 col-md-6 scroll-hidden" id="schoolProjectsAccordion">
+
+                <!-- Project 1 -->
+                <div class="project d-flex justify-content-between align-items-center gap-3">
+                <span class="fw-medium">NUQueue: A Queueing System for NU Fairview</span>
+                <button class="btn btn-outline-dark btn-sm plus-toggle-btn"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#schoolProject1"
+                        aria-expanded="true"
+                        aria-controls="schoolProject1">
+                    <span class="plus-rotate">−</span>
+                </button>
+                </div>
+                <div class="collapse mt-3 show" id="schoolProject1">
+                <div class="card card-body border-0 p-0 bg-transparent">
+                    <ul class="mb-0 ps-3">
+                    <li>2024-2025</li>
+                    <li>Designer, Researcher</li>
+                    <li>Our group developed a queueing system to improve service flow at NU Fairview. 
+                        I designed the interface and conducted user-needs research to ensure usability and efficiency.</li>
+                    </ul>
+                </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project d-flex justify-content-between align-items-center gap-3 mt-4">
+                <span class="fw-medium">Capstone Project: SINCO POS & Inventory System</span>
+                <button class="btn btn-outline-dark btn-sm plus-toggle-btn"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#schoolProject2"
+                        aria-expanded="false"
+                        aria-controls="schoolProject2">
+                    <span class="plus-rotate">+</span>
+                </button>
+                </div>
+                <div class="collapse mt-3" id="schoolProject2">
+                <div class="card card-body border-0 p-0 bg-transparent">
+                    <ul class="mb-0 ps-3">
+                    <li>2023</li>
+                    <li>Developer, Designer, Researcher</li>
+                    <li>We built a point-of-sale and inventory management system for small businesses. 
+                        I designed the UI, programmed core features, and handled requirements research.</li>
+                    </ul>
+                </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project d-flex justify-content-between align-items-center gap-3 mt-4">
+                <span class="fw-medium">Woki Toki (Mobile Application)</span>
+                <button class="btn btn-outline-dark btn-sm plus-toggle-btn"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#schoolProject3"
+                        aria-expanded="false"
+                        aria-controls="schoolProject3">
+                    <span class="plus-rotate">+</span>
+                </button>
+                </div>
+                <div class="collapse mt-3" id="schoolProject3">
+                <div class="card card-body border-0 p-0 bg-transparent">
+                    <ul class="mb-0 ps-3">
+                    <li>VoIP, 2022</li>
+                    <li>Programmer, Designer</li>
+                    <li>We developed a VoIP application for real-time communication. 
+                        I designed the interface and coded core voice-call functionality.</li>
+                    </ul>
+                </div>
+                </div>
+
+            </div><!-- /Right Column -->
+            </div><!-- /row -->
+        </div>
+        </section>
+
+              
+        <!-- Contact  -->
+        <div class="contact-bg scroll-hidden" id="contact-bg" style="background-image: url('img/header-bg.jpeg'); background-size: cover; background-position: center; max-height: 66vh; margin: 10px; border-radius: 15px; overflow: hidden;">
+            <div class="contact-section scroll-hidden text-center text-white d-flex align-items-center justify-content-center" style="height: 80vh;">
+                <div class="container">
+                    <h1 style="font-weight: 600; font-size: 112px;">Connect With Me</h1>
+                    <h4 style="font-weight: 100; margin-bottom: 15px;">marielalyssab@gmail.com</h4>
+                    <div class="col-12">
+                        <a href="https://www.instagram.com/marielxalyssa/" target="_blank" class="text-white fs-3 me-3">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/yenggoo/" target="_blank" class="text-white fs-3 me-3">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mariel-alyssa-bautista-923220255" target="_blank" class="text-white fs-3 me-3">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@MarielAlyssa" target="_blank" class="text-white fs-3 me-3">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center py-4" id="contact-bg">
+            <p class="mb-0">&copy; 2025 Mariel Alyssa Bautista. All rights reserved.</p>
+        </footer>
+
+	    <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+        //navbar active link switching on scroll
+        document.addEventListener("DOMContentLoaded", () => {
+        // sections to observe
+        const sections = document.querySelectorAll("section[id], div[id], header[id]");
+
+        // all navbar links that point to in-page anchors
+        const allNavLinks = Array.from(document.querySelectorAll('.navbar-nav .nav-link[href^="#"]'));
+
+        // map: sectionId -> [links that point to it]
+        const linksById = allNavLinks.reduce((acc, link) => {
+            const id = link.getAttribute('href').slice(1); // remove '#'
+            if (!acc[id]) acc[id] = [];
+            acc[id].push(link);
+            return acc;
+        }, {});
+
+        // account for fixed navbar height so activation feels right
+        const fixedNav = document.querySelector('.site-navbar-fixed');
+        const topOffset = fixedNav ? fixedNav.offsetHeight : 0;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+            entries.forEach((entry) => {
+                const id = entry.target.id;
+                if (entry.isIntersecting && linksById[id]) {
+                // clear all actives in both navbars
+                allNavLinks.forEach(l => l.classList.remove('active'));
+                // set active on every matching link (both navbars)
+                linksById[id].forEach(l => l.classList.add('active'));
+                }
+            });
+            },
+            {
+            root: null,
+            rootMargin: `-${topOffset}px 0px -50% 0px`, // ignore fixed nav height
+            threshold: 0.3,
+            }
+        );
+
+        sections.forEach(sec => observer.observe(sec));
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section[id], div[id], header[id]");
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+        const makeActive = (id) => {
+            navLinks.forEach(link => {
+            link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+            });
+        };
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            const scrollY = window.scrollY + 80; // offset so it triggers a little before
+
+            sections.forEach(sec => {
+            const top = sec.offsetTop;
+            const height = sec.offsetHeight;
+            if (scrollY >= top && scrollY < top + height) {
+                current = sec.getAttribute("id");
+            }
+            });
+
+            if (current) makeActive(current);
+        });
+        });
+        </script>
+	</body>
+    
+</html>
